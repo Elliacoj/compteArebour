@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Compte à rebour</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" async></script>
+</head>
+<body>
+    <div id="container">
+        <h1>Compte à rebour</h1>
+        <div id="compte"></div>
+
+        <div id="visual">
+            <label for="hours">Heures:</label>
+            <input type="text" id="hours" pattern="[0-9]{1,}" placeholder="0">
+            <label for="minutes">Minutes:</label>
+            <input type="text" id="minutes" maxlength="2" pattern="[0-6]{1}[0-9]{1}" placeholder="00">
+            <label for="seconds">Secondes:</label>
+            <input type="text" id="seconds" maxlength="2" pattern="[0-6]{1}[0-9]{1}" placeholder="00">
+        </div>
+
+        <div id="buttons">
+            <button id="start">Start</button>
+            <button id="reset">Reset</button>
+        </div>
+    </div>
+</body>
+</html>

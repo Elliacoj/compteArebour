@@ -1,0 +1,82 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    width: 100%;
+    font-size: 3rem;
+}
+
+#container {
+    width: 80%;
+    margin: 5% auto 5% auto;
+    display: flex;
+    flex-wrap: wrap;
+    border: 4px solid black;
+    background-color: #3cb1ca;
+    border-radius: 20%;
+}
+
+h1 {
+    width: 100%;
+    font-style: italic;
+    text-align: center;
+    text-decoration-line: underline;
+    margin: 5% 0 3% 0;
+    text-shadow: 5px 5px 5px darkgrey;
+}
+
+#visual {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+#compte {
+    width: 60%;
+    margin: 0 auto 3% auto;
+}
+
+.compte {
+    border: 2px solid black;
+    background-color: white;
+    width: 100%;
+    padding: 1%;
+    text-align: center;
+}
+
+#buttons {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 3% 0 3% 0;
+}
+
+#start, .stop, #reset {
+    font-size: 1.5rem;
+    border-radius: 45%;
+    padding: 1%;
+    font-weight: bold;
+}
+
+.stop {
+    margin-top: 2%;
+}
+
+#start, .stop {
+    margin-right: 3%;
+}
+
+label {
+    font-weight: bold;
+}
+
+input {
+    text-align: center;
+}
