@@ -89,6 +89,8 @@ let Count = function (hours, minutes, seconds, compte) {
                 hours = saveHours;
                 minutes = saveMinutes;
                 seconds = saveSeconds;
+                stop.style.display = "inline";
+                restart.style.display = "none";
                 clearTimeout(stops);
             })
         }
