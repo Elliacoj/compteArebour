@@ -8,7 +8,6 @@ let compte = document.getElementById("compte");
 
 // Object countdown
 let Count = function (hours, minutes, seconds, compte) {
-
     /**
      * function for countdown
      */
@@ -30,9 +29,9 @@ let Count = function (hours, minutes, seconds, compte) {
         restart.style.display = "none";
         stop.style.display = "inline";
 
-        const saveHours = hours;
-        const saveMinutes = minutes;
-        const saveSeconds = seconds;
+        let saveHours = hours;
+        let saveMinutes = minutes;
+        let saveSeconds = seconds;
 
         time();
 
@@ -55,7 +54,7 @@ let Count = function (hours, minutes, seconds, compte) {
                     seconds--;
                 }
 
-                else if(seconds === 0 && minutes !== 0) {
+                else if((seconds === 0) && (minutes > 0)) {
                     minutes--
                     seconds = 59;
                 }
@@ -68,7 +67,7 @@ let Count = function (hours, minutes, seconds, compte) {
                 time();
             }, 1000);
 
-            if((hours && minutes && seconds) === 0) {
+            if(seconds === 0 && minutes === 0 && hours === 0) {
                 clearTimeout(stops);
             }
 
@@ -112,7 +111,7 @@ function countDown() {
     let hour = hours.value;
     let minute = minutes.value;
     let second = seconds.value;
-    let count = new Count(hour, minute, second, compte, stop);
+    let count = new Count(hour, minute, second, compte);
     count.getStart();
 }
 

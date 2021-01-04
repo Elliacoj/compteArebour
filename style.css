@@ -19,7 +19,7 @@ body {
     flex-wrap: wrap;
     border: 4px solid black;
     background-color: #3cb1ca;
-    border-radius: 20%;
+    border-radius: 300px;
 }
 
 h1 {
